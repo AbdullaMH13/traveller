@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kochi Tourism</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search" />
+    <style>
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+  background-color: #b94b4b;
+}
+
+.topnav{
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  z-index: 1000;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #0e6372;
+  display: flex;
+  align-items: center; /* Aligns the logo and nav items vertically */
+  justify-content: flex-start; /* Makes sure the items start from the left */
+}
+
+.topnav .search-bar{
+  align-items:end;
+  padding: 8px;
+  width: 200px;
+  position: absolute;
+  right: 40px;
+  border-radius: 15px;
+  
+}
+.topnav .material-symbols-outlined{
+  width: max-content;
+  position: absolute;
+  margin-left: 10px;
+  right: 10px; 
+}
+
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: rgb(225, 34, 34);
+  border-radius: 7px;
+}
+
+.topnav a.active {
+  background-color: #dcb444;
+  color: white;
+  border-radius: 7px;
+}
+
+        h1, h2, h3 {
+            font-weight: 600;
+            color: #2d2d2d;
+        }
+
+        /* Header */
+        header {
+            background-color: #2d3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .navbar h1 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+
+        /* Section Styles */
+        section {
+            padding: 40px 20px;
+            margin: 20px 0;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .spot {
+            display: flex;
+            justify-content: space-between;
+            background-color: white;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .spot img {
+            width: 30%;
+            height: auto;
+        }
+
+        .spot h3 {
+            font-size: 1.5rem;
+            margin: 10px;
+        }
+
+        .spot p {
+            font-size: 1rem;
+            padding: 10px;
+            width: 60%;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #2d3e50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Responsive Layout */
+        @media (max-width: 768px) {
+            .spot {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .spot img {
+                width: 100%;
+                height: auto;
+            }
+
+            .spot p {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="topnav">
+            <img src="logo.jpg" width="10%" alt="the coffee logo">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="booking.html">Booking</a>
+            <a href="contact.html">Suggestion</a>
+            <span class="material-symbols-outlined">search</span>
+            <input type="search" placeholder="search" class="search-bar">
+        </div>
+    </header>
+
+    <section id="breakfast">
+        <h2>Breakfast Spots in Kochi</h2>
+        <div class="spot">
+            <img src="photos/img1.jpg" alt="Breakfast Spot 1">
+            <h3>The Coffee Bean & Tea Leaf</h3>
+            <p>Enjoy a relaxing breakfast with coffee, croissants, and other baked goods.</p>
+        </div>
+        <div class="spot">
+            <img src="photos/img1.jpg" alt="Breakfast Spot 2">
+            <h3>Chai Wala</h3>
+            <p>Great for a quick and tasty breakfast with South Indian specialties.</p>
+        </div>
+    </section>
+
+    <section id="lunch">
+        <h2>Lunch Spots in Kochi</h2>
+        <div class="spot">
+            <img src="photos/img1.jpg" alt="Lunch Spot 1">
+            <h3>Fort House Restaurant</h3>
+            <p>Serving authentic Kerala cuisine, with a view of the beautiful Fort Kochi Beach.</p>
+        </div>
+        <div class="spot">
+            <img src="photos/img1.jpg" alt="Lunch Spot 2">
+            <h3>Fusion Bay</h3>
+            <p>A blend of traditional and contemporary Kerala food with fresh seafood options.</p>
+        </div>
+    </section>
+
+    <section id="evening">
+        <h2>Evening Spots in Kochi</h2>
+        <div class="spot">
+            <img src="photos/img1.jpg" alt="Evening Spot 1">
+            <h3>The Tower Club</h3>
+            <p>Perfect for an evening of drinks, snacks, and beautiful views of Kochi.</p>
+        </div>
+        <div class="spot">
+            <img src="photos/img1.jpg" alt="Evening Spot 2">
+            <h3>Greenix Village</h3>
+            <p>A cultural and entertainment center offering evening performances, arts, and food.</p>
+        </div>
+    </section>
+
+    <section id="dinner">
+        <h2>Dinner Spots in Kochi</h2>
+        <div class="spot">
+            <img src="photos/img1.jpg" alt="Dinner Spot 1">
+            <h3>Kayani Restaurant</h3>
+            <p>Ideal for a quiet and traditional Kerala dinner with local delicacies.</p>
+        </div>
+        <div class="spot">
+            <img src="photos/img1.jpg" alt="Dinner Spot 2">
+            <h3>The Rice Boat</h3>
+            <p>Dining on a boat with amazing seafood, located on the waterfront of Kochi.</p>
+        </div>
+    </section>
+
+    <section id="nightlife">
+        <h2>Nightlife in Kochi</h2>
+        <div class="spot">
+            <img src="photos/img1.jpg" alt="Nightlife Spot 1">
+            <h3>Qissa</h3>
+            <p>A chic bar and lounge offering signature cocktails and live music performances.</p>
+        </div>
+        <div class="spot">
+            <img src="photos/img1.jpg" alt="Nightlife Spot 2">
+            <h3>The Lobby Lounge</h3>
+            <p>Relax with cocktails, snacks, and beautiful night views of the city.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Kochi Tourism. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
